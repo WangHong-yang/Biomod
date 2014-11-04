@@ -1,0 +1,411 @@
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+@font-face{
+    font-family: bbb;
+    src:url("FuturaBT-BookItalic.otf") format("opentype")
+}
+
+::-moz-selection {
+    background: #A21E24;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #fed136;
+
+    text-shadow: none;
+}
+
+body {
+    background-color: #ffffff;
+    min-width: 990px;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   Author H.Y. Wang's custom styles
+   ========================================================================== */
+
+header {
+
+}
+
+header img {
+    height: 80px;
+    padding: 16px 0 16px 70px;
+}
+
+header ul {
+    position: absolute;
+    float: right;
+    right: 0;
+    padding-right: 40px;
+    margin-left: 370px;
+    margin-top: -65px;
+
+}
+
+header ul a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    display: inline-block;
+    width: 108px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    border-left: 1px dashed white;
+    margin-bottom: 10px;
+}
+
+header ul a:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    color: #3498db;
+    border-color: #3498db;
+
+}
+
+#top_nav_project {
+    padding-left: 10px;
+}
+
+#top_nav_mm {
+    width: 220px;
+    padding-left: 10px;
+}
+
+nav {
+    width: 100%;
+    background-color: #650203;
+}
+
+.after_fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 500;
+}
+
+#after_fixed_div {
+    position: relative;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    height: 42px;
+    visibility: hidden;
+}
+
+nav ul {
+    padding: 0 70px;
+    margin: 0;
+}
+
+nav ul li {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    font-family: aaa, 微软雅黑;
+    font-size: 1.41em;
+    padding: 9px 0;
+    cursor: pointer;
+    color: white;
+}
+
+nav ul li:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    background-color: rgba(0,0,0,0.6);
+}
+
+.clicked {
+    background-color: rgba(0,0,0,0.6);
+}
+
+
+/* sections -- class="satges" */
+
+.stages {
+    width: 100%;
+
+}
+
+#stage_1 {
+    height: 1170px;
+    position: relative;
+    z-index: -5;
+    margin-top: -112px;
+    background-image: url("../img/team_bg.png");
+    background-position: center top;
+    background-attachment: scroll;
+}
+
+#stage_2 {
+    position: relative;
+    width: 100%;
+
+}
+
+#stage_2 p{
+    color: #7b7b7b;
+    font-family: bbb;
+}
+
+#stage_2 h2 {
+    color: #000000;
+    padding-top: 40px;
+    padding-left: 70px;
+    font-family: aaa;
+    font-size: 1.9em;
+    font-weight: bolder;
+    border-bottom: 1px solid RGBA(248,171,21,0.6);
+}
+
+#about_left {
+    width: 500px;
+    float: left;
+    padding-left: 70px;
+}
+
+#about_right {
+    width: 300px;
+    float: right;
+    padding-right: 70px;
+}
+
+#stage_3 {
+    width: 100%;
+}
+
+.persons {
+    width: 50%;
+    margin: 200px 0;
+}
+
+.person_block {
+    width: 50%;
+    display: inline-block;
+}
+
+#person_block1 {
+    margin-top: 100px;
+    float: left;
+}
+#person_block2 {
+    float: right;
+}
+
+#person_block2 .section_left {
+    margin-left: 200px;
+
+}
+#person_block2 .section_right {
+    margin-left: 0;
+}
+
+
+.left_person {
+    float: right;
+    margin-right: 150px;
+    margin-bottom: 0;
+}
+
+.right_person {
+    margin-left: 50px;
+}
+
+.persons section {
+    width: 200px;
+}
+
+
+
+.persons section p {
+    color: #7b7b7b;
+}
+
+.section_right {
+    margin-left: 215px;
+    margin-top: -217px;
+}
+
+#right_1st {
+    margin-top: 50px;
+}
+
+#right_5th {
+    margin-bottom: 50px;
+}
+
+.name {
+    font-size: 1.4em;
+    color: #000000!important;
+    margin-bottom: 0px;
+}
+
+.pos {
+    letter-spacing: 4px;
+    margin-top: 0px;
+    color: #000000!important;
+}
+
+.job {
+    color: #000000!important;
+}
+
+.motto {
+    font-family: bbb;
+}
+
+#stage_4 h2, #stage_5 h2 {
+    color: #000000;
+    font-family: aaa;
+    font-size: 1.9em;
+    font-weight: bolder;
+    padding-top: 50px;
+    padding-left: 70px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#turtor_block, #logo_block {
+    width: 100%;
+    margin: 0 6%;
+}
+
+#turtor_block .turtor_persons {
+    width: 22%;
+    display: inline-block;
+}
+
+#logo_block .school_logos {
+    width: 27.3%;
+    display: inline-block;
+}
+
+.turtor_persons img, .school_logos img {
+    display: block;
+    margin: 20px auto;
+}
+
+.blur {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+
+    position: relative;
+    width: 200px;
+    height: 270px;
+    margin: -290px auto 0 auto;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    cursor: default;
+}
+
+.blur:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+
+    opacity: 1;
+}
+
+.blur p {
+    font-family: aaa;
+
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.blur_name {
+    padding-top: 30px;
+}
+
+#stage_4 h2, #stage_5 h2 {
+    border-bottom: 1px solid RGBA(248,171,21,0.6);
+}
+
+#xiaohui img {
+    margin-bottom: 29px;
+}
+
+#bingdusuo img {
+    margin-bottom: -10px;
+}
+
+.s3_part {
+    display: inline-block;
+    width: 22%;
+}
+
+#section_third {
+    position: relative;
+    padding: 20px 4% 20px 8%;
+    background-color: #111a2b;
+}
+
+#section_third img {
+    margin-bottom: 115px;
+}
+
+#section_third ul {
+    word-wrap: break-word;
+}
+
+#section_third ul a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    display: block;
+    line-height: 1.7em;
+    color: white;
+}
+#section_third ul a:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    color: #3498db;
+}
+
+#section_third #contact {
+    line-height: 0.5em;
+}
+
+#section_third #contact h1 {
+    font-weight: lighter;
+}
+
+
+#section_third {
+    height: 185px;

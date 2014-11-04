@@ -1,0 +1,271 @@
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+@font-face{
+    font-family: bbb;
+    src:url("FuturaBT-BookItalic.otf") format("opentype")
+}
+
+::-moz-selection {
+    background: #fed136;
+    text-shadow: none;
+}
+
+::selection {
+    background: #fed136;
+    text-shadow: none;
+}
+
+
+/* ==========================================================================
+   Author H.Y. Wang's custom styles
+   ========================================================================== */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 20px solid rgba(0,0,0,0.03);
+
+}
+
+header img {
+    height: 80px;
+    padding: 16px 0 16px 70px;
+}
+
+header ul {
+    position: absolute;
+    float: right;
+    right: 0;
+    padding-right: 40px;
+    margin-left: 370px;
+    margin-top: -65px;
+
+}
+
+header ul a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    display: inline-block;
+    width: 108px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    border-left: 1px dashed white;
+    margin-bottom: 10px;
+    color: #3498db;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+header ul a:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    color: #3498db;
+    border-color: #3498db;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+#top_nav_project {
+    padding-left: 10px;
+}
+
+#top_nav_mm {
+    width: 220px;
+    padding-left: 10px;
+}
+
+nav {
+    width: 100%;
+    background-color: RGBA(52,152,219,0.8);
+}
+
+.after_fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 500;
+}
+
+#after_fixed_div {
+    position: relative;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    height: 42px;
+    visibility: hidden;
+}
+
+nav ul {
+    padding: 0 70px;
+    margin: 0;
+}
+
+nav ul li {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    font-family: aaa, 微软雅黑;
+    font-size: 1.41em;
+    padding: 9px 0;
+    cursor: pointer;
+    color: white;
+}
+
+nav ul li:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    background-color: RGBA(52,152,219,0.6);
+}
+
+.clicked {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.stages {
+    margin: 10px 70px 0px 70px;
+    background-color: rgba(255,255,255,0.95);
+    border-left: 3px solid RGBA(248,171,21,0.6);
+    padding: 20px 30px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stages h2 {
+    color: #000000;
+    font-family: aaa, 微软雅黑;
+    font-size: 1.6em;
+}
+
+.stages p {
+    color: #000000;
+    font-family: aaa, 微软雅黑;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+#stage1 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#stage1 h2 {
+    font-family: bbb;
+    font-size: 2.3em;
+    margin: 0;
+}
+
+#stage2 {
+    margin-top: 1px;
+}
+
+#stage2 h2 {
+    font-family: aaa;
+    font-size: 1.6em;
+    font-weight: lighter;
+}
+
+#stage2 img {
+    display: block;
+    margin: 0 auto;
+}
+
+#stage2 p {
+    font-family: bbb;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#stage2 p span {
+    font-weight: normal;
+}
+
+
+#stage3 img, #stage4 img {
+    display: block;
+    margin: 0 auto;
+}
+
+#stage3_p1, #stage4_p1 {
+    font-family: bbb;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#stage3, #stage4 {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.s3_part {
+    display: inline-block;
+    width: 22%;
+}
+
+#section_third {
+    height: 183px;
+    position: relative;
+    padding: 20px 4% 20px 8%;
+    background-color: #111a2b;
+    background-image: url(../img/anwen_down.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+#section_third img {
+    margin-bottom: 50px;
+}
+
+#section_third ul {
+    word-wrap: break-word;
+}
+
+#section_third ul a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    display: block;
+    line-height: 1.7em;
+    color: white;
+}
+#section_third ul a:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    color: #3498db;
+}
+
+#section_third #contact {
+    line-height: 0.5em;
+}
+
+#section_third #contact h1 {
+    font-weight: lighter;
+}
